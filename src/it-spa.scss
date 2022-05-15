@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height : 100%;
+    margin : 0;
+    padding: 0
+}
+
+.wrapper.show{
+    padding-left: 27vw;
+} 
+body {
+position: relative;
+background : linear-gradient(45deg, #faf9f9 0%, #deeef1 100%) no-repeat fixed;
+font-family: 'Poppins', 'Arial', sans-serif;
+// padding    : 2rem;
+.contact{
+    div{
+        position: fixed;
+        bottom: 0%;
+        }
+    }
+}
+
+.burger.active+nav{
+    left: 0;
+}
+.close{display: none;}
+.burger{
+    @media(max-width: 500px){
+        position: fixed;
+        display: inline-block;
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: transparent;
+        z-index: 2;
+        div.bar1, .bar2, .bar3{
+            width: 3rem;
+            height: 7px;
+            background-color: black;
+            margin: 6px 0;
+        }
+    .bar{
+        display: none;
+    }
+    .close{
+        display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+    }
+    .show{
+        display: block;
+    }
+    nav.show{
+        left: 0;
+    }
+    }
+}
+.burger:hover{
+    cursor: pointer;
+}
+nav {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 44rem;
+    z-index: 2;
+    width: 100vw;
+    transition: .3s;
+@media (max-width: 1300px) {
+padding-left: 25rem;
+}
+@media(max-width:1000px){
+    padding-left: 5rem;
+}
+@media (max-width: 650px) {
+    padding-left: 2rem;
+    }
+  
+    @media(max-width: 500px){
+        position: fixed;
+        width: 28vw;
+        left: -28vw;
+        top: 0;
+        bottom: 0;
+        padding-left: 0;
+    }
+
+    button,
+    .btn {
+        background   : transparent;
+        border       : 0;
+        border-radius: 0;
+        box-shadow   : none !important;
+        font-size    : 1.5rem;
+        outline      : none;
+        padding      : 0.5rem 1rem;
+        color: rgb(84, 26, 99);
+        transition: .2s;
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: transparent;
+        }
+        @media(max-width: 650px){
+            font-size: 1rem;
+        }
+        @media(max-width: 500px){
+            font-size: 1rem;
+            padding: 2rem 2rem;
+        }
+    }
+
+    .btn.btn-active {
+        background-color: #f4b700;
+        text-decoration : underline;
+    }
+    .btn:hover{
+        color: rgb(184, 89, 189);
+    }
+}
+
+main {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2rem 0;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    ul {
+        list-style: none;
+        padding   : 0;
+        margin: 10rem;
+        @media(max-width:500px){
+            margin: 1.5rem;
+        }
+
+        li {
+            background-color: #5b8092;
+            box-shadow      : #00576e 0 2px 8px 2px;
+            color           : #fff;
+            padding         : 1rem;
+
+            footer {
+                display        : flex;
+                align-items    : center;
+                justify-content: flex-end;
+
+                &>*+* {
+                    margin-left: 1rem;
+                }
+            }
+
+            button,
+            .btn {
+                background: transparent;
+                border    : 1px solid #fff;
+                color     : #fff;
+                @media(max-width: 500px){
+                    font-size: 0.9rem;
+                }
+            }
+        }
+.liRooms{
+    @media(max-width:600px){
+        width: 20rem;
+        height: 15rem;
+    }
+    @media(max-width:500px){
+        width: 20rem;
+        height: 15rem;
+    }
+}
+        .liRooms+.liRooms {
+            margin-top: 2rem;
+        }
+        .liTreatments{
+            margin: 0%;
+            position: absolute;
+            display: block;
+            height: 18rem;
+            width: 28rem;
+            background-size: cover;
+
+
+        }
+        .liTreatments:nth-child(1){
+            background-image: url("../src/images/spa-kamienie.jpg");
+            top: 5rem;
+            left: 2.5rem;
+            @media(max-width: 1500px){
+                left: 5rem;
+            }
+            @media(max-width:1024px){
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(2){
+            background-image: url("../src/images/maseczka.jpg");
+            top: 5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1500px){
+            left: 69rem;
+            }
+            @media (max-width: 1400px){
+                left: 60rem;
+            }
+            @media (max-width: 1300px){
+                left: 49rem;
+            }
+            @media(max-width:1024px){
+                top: 30rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(3){
+            background-image: url("../src/images/pedicure.jpg");
+            margin-right: 2.5rem;
+            top: 5rem;
+            right: 0;
+            @media(max-width: 1500px){
+                top:30rem;
+                left: 5rem;
+                
+            }
+            @media(max-width:1024px){
+                top: 55rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(4){
+            background-image: url("../src/images/acupuncture-g330d33231_1920.jpg");
+            top: 30rem;
+            margin-right: 2.5rem;
+            right: 0;
+            @media(max-width: 1500px){
+                right: 4rem;
+            }
+            @media (max-width: 1400px){
+                left: 46rem;
+            }
+            @media (max-width: 1300px){
+                left: 35rem;
+            }
+            @media(max-width:1024px){
+                top: 80rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .liTreatments:nth-child(5){
+            background-image: url("../src/images/sauna.jpg");
+            top: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1500px){
+                top: 55rem;
+                left: 23%;
+            }
+            @media (max-width: 1300px){
+                left: 19rem;
+            }
+            @media(max-width:1024px){
+                top: 105rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+        .liTreatments:nth-child(6){
+            background-image: url("../src/images/singing-bowls-gbb2e07f2c_1920.jpg");
+            top: 30rem;
+            left: 2.5rem;
+            @media(max-width: 1500px){
+                top: 55rem;
+                left: 55rem;
+            }
+            @media (max-width: 1400px){
+                left: 45rem;
+            }
+            @media (max-width: 1300px){
+                left: 35rem;
+            }
+            @media(max-width:1024px){
+                top: 130rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    article {
+        position: relative;
+        top:8rem;
+        $bg-color-1: #e3e8ef;
+        $bg-color-2: #edeef0;
+
+        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
+        box-shadow: #00576e 0 2px 8px 2px;
+        margin    : 2em 1em;
+        padding   : 1rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background: #829aae;
+            color     : white;
+            margin    : 0;
+            padding   : 1rem 0.5rem;
+        }
+    }
+    section{
+        color: rgb(84, 26, 99);
+    h2{
+        color: #6a5b2f;
+    }
+        .text{
+            position: absolute;
+            top: 35rem;
+            width: 40vw;
+            padding: 2rem;
+            @media(max-width: 600px){
+                width: 80vw;
+            }
+            @media(max-width: 500px){
+                width: 80vw;
+            }
+        }
+        .ofert{
+            position: absolute;
+            padding: 2rem;
+            height: 32rem;
+            width: 40vw;
+            top: 45rem;
+            right: 0;
+            @media(max-width: 600px){
+                top: 50rem;
+                width: 80vw;
+                left: 0;
+            }
+        }
+
+    .divHome.show{
+        padding-left: 50rem;
+    }
+        .bgcHotel{
+            position: absolute;
+            top: 3.3rem;
+            left: 0;
+            z-index: 1;
+            background-image: url("../src/images/spa-g9bd94c06a_1920.jpg");
+            background-size: cover;
+            background-position: center bottom;
+            background-attachment: fixed;
+            height: 22rem;
+            width: 100vw;
+            @media (min-width: 1920px){
+                background-position: bottom;
+            }
+        }
+    .greeting{
+        position: absolute;
+        left: 50%;
+        top: 28rem;
+        transform: translateX(-50%);
+    }
+    .divRooms{
+        position: absolute;
+        top: -7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @media(max-width: 600px){
+            left: 55%;
+        }
+    }
+    .divTreatments{
+        position: absolute;
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        @media(max-width: 500px){
+            top: 0;
+        }
+    }
+    .divCalendarText{
+        position: absolute;
+        top: 12rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @media(max-width: 500px){
+            top: 6rem;
+        width: 100%;
+            
+        }
+    h2{
+        @media(max-width: 1120px){
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        @media(max-width: 1024px){
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        @media(max-width: 500px){
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+    }
+    .divCalendar{
+        position: absolute;
+        width: 70rem;
+        height: 12rem;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        @media(min-width: 1500px){
+            width: 90rem;
+        }
+        @media(max-width:1024px){
+            top: 40%;
+            width: 57rem;
+            height: 15rem;
+        }
+        @media(max-width:930px){
+            top: 30%;
+            width: 50rem;
+            height: 20rem;
+        }
+        @media(max-width:800px){
+            top: 30%;
+            width: 50rem;
+            height: 20rem;
+        }
+        @media(max-width:500px){
+            top: 30%;
+            width: 30rem;
+            height: 20rem;
+        }
+
+        label{
+            position: absolute;
+            width: 70rem;
+            margin-left: 2rem;
+            margin-right: 15rem;
+            margin-left: 5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            @media(min-width: 1500px){
+                width: 90rem;
+                margin-left: 8rem;
+            }
+            @media(max-width:1024px){
+                width: 55rem;
+                height: 20rem;
+                margin-left: 0;
+            }
+            @media(max-width:930px){
+                width: 30rem;
+                height: 20rem;
+                margin-left: 8rem;
+            }
+            @media(max-width:800px){
+                width: 30rem;
+                height: 20rem;
+                margin-left: 8rem;
+            }
+            @media(max-width:500px){
+                width: 30rem;
+                height: 20rem;
+                margin-left: 1rem;
+            }
+            input{
+                margin-left: 1rem;
+                margin-right: 13rem;
+                @media(min-width:1500px){
+                    margin-right: 25rem;
+                }
+                @media(max-width:1024px){
+                    margin-top: 9rem;
+                    // margin-bottom: 2rem;
+                    margin-right: 10rem;
+                    margin-left: 0;
+                }
+                @media(max-width:930px){
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    margin-right: 11rem;
+                }
+                @media(max-width:800px){
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    margin-right: 11rem;
+                }
+                @media(max-width:500px){
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    margin-right: 11rem;
+                }
+
+            }
+        }
+    }
+    .buttonNav{
+        border: black solid .1rem;
+        position: absolute;
+        top: calc(50% + 6rem);
+        transform: translateY(-50%);
+        right: 19rem;
+        background-color: #fff;
+        @media(min-width:1500px){
+            right: 17rem;
+        }
+        @media(max-width:1400px){
+            right: 15rem;
+        }
+        @media(max-width:1270px){
+            right: 10rem;
+        }
+        @media(max-width:1120px){
+            right: 5rem;
+        }
+        @media(max-width:1024px){
+            top: 26rem;
+            right: 7rem;
+        }
+        @media(max-width:930px){
+            top: 26.5rem;
+            right: 14rem;
+        }
+        @media(max-width:800px){
+            top: 26.5rem;
+            right: 8rem;
+        }
+        @media(max-width:650px){
+            top: 26rem;
+            right: 6rem;
+        }
+        @media(max-width:500px){
+            top: 26rem;
+            right: 4rem;
+        }
+    }
+    .confirmButton{
+        border: black solid .1rem;
+        position: absolute;
+        top: calc(50% + 6rem);
+        transform: translateY(-50%);
+        right: 49rem;
+        background-color: white;
+        @media(min-width:1500px){
+            right: 58rem;
+        }
+        @media(max-width:1400px){
+            right: 45rem;
+        }
+        @media(max-width:1270px){
+            right: 40rem;
+        }
+        @media(max-width:1120px){
+            right: 35rem;
+        }
+        
+        @media(max-width: 1024px){
+            top:26rem;
+            right: 33rem;
+            }
+        @media(max-width: 930px){
+            top:18.7rem;
+            right: 14rem;
+            }
+                
+        @media(max-width: 800px){
+            top:18.7rem;
+            right: 8rem;
+            }
+        @media(max-width: 650px){
+            top:18.5rem;
+            right: 6rem;
+            }
+        @media(max-width: 500px){
+        top:18.5rem;
+        right: 4rem;
+        }
+    }
+    .buttonNav:hover, .confirmButton:hover{
+        background-color: #5b8092;
+        color: #fff;
+    }
+    .buttonBack, .backButton2{
+        position: absolute;
+        top: 18rem;
+        right: 8rem;
+        border: black solid .1rem;
+    }
+    .buttonBack:hover{
+        color: white;
+        background-color: rgb(180, 182, 218);
+    }
+    .divRoomDetail{
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @media(max-width:600px){
+            left:53%;
+        }
+        h2{
+            @media(max-width:600px){
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .divTreatmentDetails{
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @media(max-width:600px){
+            left:53%;
+        }
+        h2{
+            @media(max-width:600px){
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .table{
+        margin-top: 5rem;
+    }
+    .divCart{
+    position: relative;
+    top: 4rem;
+}
+.divSummary{
+    cursor: auto;
+    h2{
+        font-size: 1.4rem;
+    }
+}
+    }
+
+}
+

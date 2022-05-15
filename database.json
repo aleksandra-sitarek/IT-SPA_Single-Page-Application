@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "login": "harry",
+      "password": "secret"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Pokój 1 osobowy",
+      "beds": 1,
+      "guests": 1,
+      "price": 170
+    },
+    {
+      "id": 2,
+      "name": "Pokój 2 osobowy",
+      "beds": 1,
+      "guests": 2,
+      "price": 240
+    },
+    {
+      "id": 3,
+      "name": "Pokój 3 osobowy",
+      "beds": 2,
+      "guests": 3,
+      "price": 290
+    },
+    {
+      "id": 4,
+      "name": "Pokój 4 osobowy",
+      "beds": 2,
+      "guests": 4,
+      "price": 340
+    }
+  ],
+  "treatments": [
+    {
+      "id": 5,
+      "name": "Masaż rozgrzanym monitorem",
+      "area": "plecy",
+      "time": 30,
+      "price": 80
+    },
+    {
+      "id": 6,
+      "name": "Biczowanie kablem od myszy",
+      "area": "plecy",
+      "time": 20,
+      "price": 70
+    },
+    {
+      "id": 7,
+      "name": "Peeling odłamkami płyty CD",
+      "area": "twarz",
+      "time": 15,
+      "price": 50
+    },
+    {
+      "id": 8,
+      "name": "Pedicure woskiem z USB",
+      "area": "nogi",
+      "time": 25,
+      "price": 100
+    },
+    {
+      "id": 9,
+      "name": "Manicure analogowo-cyfrowy",
+      "area": "ręce",
+      "time": 45,
+      "price": 150
+    },
+    {
+      "id": 10,
+      "name": "Kąpiel w gorącej kawie",
+      "area": "całe ciało",
+      "time": 60,
+      "price": 200
+    }
+  ]
+}
+ 
