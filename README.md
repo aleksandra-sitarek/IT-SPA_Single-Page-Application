@@ -9,7 +9,7 @@ The application allows for users to:
 
 ## Instalation
 1. npm install  
-2. npm run scripts and use "start" 
+2. npm run start:db, npm run start: app 
 3. App will run at localhost:1234
 
 
